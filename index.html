@@ -1,42 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLASH-MUXES 🎬</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #121212; color: #f1f1f1; margin:0; padding:0; }
-        header { text-align: center; padding: 20px; background: #1f1f1f; }
-        h1 { margin: 0; font-size: 2em; color: #ff3c00; }
-        .movies { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
-        .movie { background: #1f1f1f; padding: 15px; width: 200px; border-radius: 8px; text-align: center; transition: transform 0.2s; }
-        .movie:hover { transform: scale(1.05); }
-        a { color: #ff3c00; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
-        footer { text-align: center; padding: 10px; background: #1f1f1f; margin-top: 20px; }
-    </style>
-</head>
 <body>
-    <header>
-        <h1>FLASH-MUXES 🎬</h1>
+    
+    <header class="main-header">
+        <h1 class="logo">FLASH-MUXES</h1>
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" placeholder="Search movies, series..." name="q" class="search-input">
+            <button type="submit" class="search-button">🔍</button>
+        </form>
     </header>
 
-    <section class="movies">
-        <div class="movie">
-            <h2>Movie 1</h2>
-            <a href="#">Watch Now</a>
+    <div class="movie-grid-container">
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200x300/404040/ffffff?text=Movie+1+Poster" alt="Poster for Movie 1" class="poster">
+            <div class="card-info">
+                <h3>The Code Breaker</h3>
+                <p class="rating">⭐ 8.5</p>
+                <a href="#" class="watch-btn">Watch Now</a>
+            </div>
         </div>
-        <div class="movie">
-            <h2>Movie 2</h2>
-            <a href="#">Watch Now</a>
-        </div>
-        <div class="movie">
-            <h2>Movie 3</h2>
-            <a href="#">Watch Now</a>
-        </div>
-    </section>
 
-    <footer>
-        &copy; 2025 FLASH-MUXES | All Rights Reserved
-    </footer>
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200x300/404040/ffffff?text=Movie+2+Poster" alt="Poster for Movie 2" class="poster">
+            <div class="card-info">
+                <h3>Vercel Velocity</h3>
+                <p class="rating">⭐ 7.9</p>
+                <a href="#" class="watch-btn">Watch Now</a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/200x300/404040/ffffff?text=Movie+3+Poster" alt="Poster for Movie 3" class="poster">
+            <div class="card-info">
+                <h3>The Grid Architect</h3>
+                <p class="rating">⭐ 9.1</p>
+                <a href="#" class="watch-btn">Watch Now</a>
+            </div>
+        </div>
+        
+        </div>
+    
+    <div class="footer">
+        © 2025 FLASH-MUXES | All Rights Reserved
+    </div>
+
 </body>
-</html>
