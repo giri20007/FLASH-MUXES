@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Movie Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASH-MUXES 🎬</title>
     <style>
-        body { font-family: Arial; text-align: center; margin-top: 50px; }
-        a { display: block; margin: 10px; color: blue; text-decoration: none; }
+        body { font-family: Arial, sans-serif; background: #121212; color: #f1f1f1; margin:0; padding:0; }
+        header { text-align: center; padding: 20px; background: #1f1f1f; }
+        h1 { margin: 0; font-size: 2em; color: #ff3c00; }
+        .movies { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
+        .movie { background: #1f1f1f; padding: 15px; width: 200px; border-radius: 8px; text-align: center; transition: transform 0.2s; }
+        .movie:hover { transform: scale(1.05); }
+        a { color: #ff3c00; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
+        footer { text-align: center; padding: 10px; background: #1f1f1f; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Movie Site 🎬</h1>
-    <a href="#">Movie 1</a>
-    <a href="#">Movie 2</a>
-    <a href="#">Movie 3</a>
+    <header>
+        <h1>FLASH-MUXES 🎬</h1>
+    </header>
+
+    <section class="movies">
+        <div class="movie">
+            <h2>Movie 1</h2>
+            <a href="#">Watch Now</a>
+        </div>
+        <div class="movie">
+            <h2>Movie 2</h2>
+            <a href="#">Watch Now</a>
+        </div>
+        <div class="movie">
+            <h2>Movie 3</h2>
+            <a href="#">Watch Now</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 FLASH-MUXES | All Rights Reserved
+    </footer>
 </body>
 </html>
